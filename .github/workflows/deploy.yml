@@ -36,7 +36,7 @@ jobs:
         env:
           # For repositories named 'username.github.io', use root path
           # For other repositories, use '/repository-name/'
-          VITE_BASE_URL: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || '/' + github.event.repository.name + '/' }}
+          VITE_BASE_URL: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
