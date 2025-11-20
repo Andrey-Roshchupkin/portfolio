@@ -1,5 +1,5 @@
 ---
-date: 2025-10-07
+date: 2025-09-07
 ---
 
 # From `<div>` Hell to SEO Heaven: Why Your Frontend Choices Can Make or Break Your Business
