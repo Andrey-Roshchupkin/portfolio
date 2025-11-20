@@ -29,34 +29,45 @@ npm run preview
 
 ## Deployment to GitHub Pages
 
-The project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+The project uses manual deployment by copying built files to the `docs` folder.
 
 ### Setup Instructions
 
-1. **Push your code to GitHub:**
+1. **Configure base path** (one-time setup):
+   - Edit `vite.config.ts`
+   - If your repository is `username.github.io`, set `base: '/'`
+   - For other repos, set `base: '/repository-name/'` (replace with your repo name)
+
+2. **Build and deploy:**
    ```bash
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/your-repo-name.git
-   git push -u origin main
+   npm run deploy
+   ```
+   
+   Or manually:
+   ```bash
+   npm run build
+   git add docs
+   git commit -m "Deploy to GitHub Pages"
+   git push origin main
    ```
 
-2. **Enable GitHub Pages:**
-   - Go to your repository Settings → Pages
-   - Under "Source", select **GitHub Actions**
-   - The workflow will automatically deploy on every push to `main` branch
+3. **Enable GitHub Pages:**
+   - Go to your repository **Settings → Pages**
+   - Under "Build and deployment", select **Source: Deploy from a branch**
+   - Select **Branch: `main`**
+   - Select **Folder: `/docs`**
+   - Click **Save**
 
-3. **Repository naming:**
-   - If your repository is named `username.github.io`, the site will be available at `https://username.github.io`
-   - For other repository names, the site will be at `https://username.github.io/repository-name`
-   - The workflow automatically configures the base path
+4. **Your site will be available at:**
+   - `https://username.github.io` (if repo is `username.github.io`)
+   - `https://username.github.io/repository-name` (for other repos)
 
-### Manual Deployment
+### Important Notes
 
-You can also trigger deployment manually:
-- Go to Actions tab in your repository
-- Select "Deploy to GitHub Pages" workflow
-- Click "Run workflow"
+- The build output goes directly to the `docs` folder
+- The `docs` folder is committed to the repository
+- After each change, run `npm run deploy` to rebuild and push updates
+- GitHub Pages will automatically deploy when you push to the `main` branch
 
 ## Configuration
 
