@@ -4,8 +4,7 @@ import react from '@vitejs/plugin-react';
 // GitHub Pages base path
 // For repository named 'username.github.io', use '/'
 // For other repositories, use '/repository-name/'
-// Change this value before building for deployment
-const base = process.env.VITE_BASE_URL || '/';
+const base = '/portfolio/';
 
 export default defineConfig({
   base,
