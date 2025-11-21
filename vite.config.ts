@@ -13,6 +13,11 @@ export default defineConfig({
   },
   plugins: [react()],
   assetsInclude: ['**/*.md'], // Allow importing .md files
+  server: {
+    fs: {
+      allow: ['..'], // Allow serving files from project root
+    },
+  },
   define: {
     // Polyfill for gray-matter in browser
     'process.env': {}, 
