@@ -4,12 +4,17 @@ Personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Features
 
-- 📝 Blog with Markdown support
-- 🌓 Dark/Light/System theme toggle
-- 🎨 GitHub-style design
-- 🔗 Direct links to articles (routing)
-- 📱 Responsive design
-- ⚡ Fast and optimized
+- 📝 **My Articles** - Blog with Markdown support, automatically reads and displays articles
+- 💼 **My Projects** - Showcase of open-source projects with descriptions
+- 🎤 **Public Speeches** - List of conference talks and presentations
+- 👤 **About Me** - Personal introduction and background
+- 📄 **Resume** - Professional resume with PDF download and copy functionality
+- 🌓 **Theme Toggle** - Dark/Light/System theme with localStorage persistence
+- 🎨 **GitHub-style Design** - Clean, minimalist design inspired by GitHub
+- 🔗 **SPA Routing** - Direct links to all content with React Router
+- 📱 **Responsive Design** - Optimized for all screen sizes
+- ⚡ **Fast & Optimized** - Built with Vite for optimal performance
+- 🔄 **Loading States** - Smooth loading indicators for content
 
 ## Development
 
@@ -75,10 +80,25 @@ Edit `src/config.ts` to customize:
 - Your name and title
 - LinkedIn and GitHub links
 
-## Adding Blog Posts
+## Content Structure
 
-1. Create a new `.md` file in `src/posts/`
-2. Add frontmatter with date (optional):
+All content is stored in the `materials/` folder at the project root:
+
+```
+materials/
+├── posts/          # Blog articles
+├── projects/       # Project descriptions
+├── speeches/      # Conference talks and presentations
+├── about/         # About me page content
+└── resume/        # Resume markdown and PDF
+```
+
+### Adding Content
+
+#### Blog Posts
+1. Create a new `.md` file in `materials/posts/`
+2. Optionally prefix filename with date: `YYYY-MM-DD-title.md`
+3. Add frontmatter with date (optional):
    ```markdown
    ---
    date: 2024-01-15
@@ -86,18 +106,40 @@ Edit `src/config.ts` to customize:
    
    # Your Article Title
    ```
-3. The title will be extracted from the first `#` heading if not in frontmatter
-4. Posts are automatically sorted by date (newest first)
+4. The title will be extracted from the first `#` heading if not in frontmatter
+5. Posts are automatically sorted by date (newest first)
+
+#### Projects
+1. Create a new `.md` file in `materials/projects/`
+2. Follow the same naming and frontmatter conventions as posts
+3. Projects are automatically listed and sortable by date
+
+#### Public Speeches
+1. Create a new `.md` file in `materials/speeches/`
+2. Follow the same naming and frontmatter conventions as posts
+3. Speeches are automatically listed and sortable by date
+
+#### About Me
+1. Edit `materials/about/about.md`
+2. The content is rendered directly on the About page
+
+#### Resume
+1. Edit `materials/resume/SDET-AQA-Andrey-Roshchupkin.md`
+2. PDF is automatically generated during build using `md-to-pdf`
+3. The PDF is available for download on the Resume page
 
 ## Tech Stack
 
 - **React 19** - UI framework
 - **TypeScript** - Type safety
-- **Vite** - Build tool
-- **Tailwind CSS v4** - Styling
-- **React Router** - Routing
-- **React Markdown** - Markdown rendering
-- **Lucide React** - Icons
+- **Vite** - Build tool and dev server
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **React Markdown** - Markdown rendering with GitHub-style styling
+- **Lucide React** - Icon library
+- **Gray Matter** - Frontmatter parsing
+- **md-to-pdf** - PDF generation from Markdown (build-time)
+- **@tailwindcss/typography** - Beautiful typography for Markdown content
 
 ## License
 

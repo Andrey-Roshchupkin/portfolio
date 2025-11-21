@@ -4,11 +4,15 @@ import { ItemList, type ListItem } from './ItemList';
 
 export function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getProjects().then(setProjects);
+    getProjects().then((data) => {
+      setProjects(data);
+      setLoading(false);
+    });
   }, []);
 
-  return <ItemList items={projects as ListItem[]} basePath="/project" emptyMessage="No projects found." />;
+  return <ItemList items={projects as ListItem[]} basePath="/project" emptyMessage="No projects found." loading={loading} />;
 }
 

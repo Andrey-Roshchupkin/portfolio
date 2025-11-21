@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Loader2 } from 'lucide-react';
 
 export interface ListItem {
   slug: string;
@@ -10,9 +11,20 @@ interface ItemListProps {
   items: ListItem[];
   basePath: string;
   emptyMessage: string;
+  loading?: boolean;
 }
 
-export function ItemList({ items, basePath, emptyMessage }: ItemListProps) {
+export function ItemList({ items, basePath, emptyMessage, loading = false }: ItemListProps) {
+  if (loading) {
+    return (
+      <section className="space-y-6">
+        <div className="flex items-center justify-center py-12">
+          <Loader2 className="h-6 w-6 animate-spin text-[#57606a] dark:text-[#7d8590]" />
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="space-y-6">
       <div className="space-y-3">
