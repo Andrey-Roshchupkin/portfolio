@@ -4,7 +4,9 @@ I'm a father, runner, and QA engineer who believes that the best work comes from
 
 ## Family First
 
-I have a son, and spending quality time with him is what matters most. We love being active together and building adventures in Minecraft — it's amazing to see the world through his eyes and create something together.
+I have a son who lives with his mother, but when he visits, I dedicate all my time to him. We love being active together and building adventures in Minecraft — it's amazing to see the world through his eyes and create something together.
+
+Every day, I work to be the person and professional he can be proud of and look up to. He's my motivation to grow, to push boundaries, and to build things that matter.
 
 ## Running & Community
 
