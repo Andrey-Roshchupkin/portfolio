@@ -14,11 +14,13 @@ const e=`# Andrey Roshchupkin
 
 ## Summary
 
-I don't just write tests—I build tools that solve real problems. When I needed a teleprompter with speech recognition, I built one. When I saw accessibility testing gaps, I created a Chrome extension using WebAI. When I noticed the disconnect between HTTP theory and practice, I built a demo server and wrote about it.
+I don't just write tests—I build tools that solve real problems. When I needed a teleprompter with speech recognition, I built one—and part of my solution was used for MVP functionality in a product at my main job. When I saw accessibility testing gaps, I created a Chrome extension using WebAI. When I noticed the disconnect between HTTP theory and practice, I built a demo server and wrote about it.
 
 My automation frameworks don't just work—they replace entire teams. I've cut test execution from 2.5 hours to 30 minutes, eliminated flaky tests, and built systems that do the work of three QA engineers at a fraction of the cost. I speak at conferences, write technical articles, and create open-source tools because I believe in sharing knowledge, not hoarding it.
 
 I'm the engineer who questions "why" when everyone else accepts "how it's always been done."
+
+**I'm open to collaboration** — whether you're an HR professional looking for a QA engineer, a developer working on an interesting project, or someone with a cool idea worth building together. Check out my [portfolio](https://andrey-roshchupkin.github.io/portfolio) to see my work, read my articles, and explore my projects. Let's connect and create something meaningful.
 
 ---
 
