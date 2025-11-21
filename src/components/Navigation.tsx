@@ -39,7 +39,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="px-4 sm:px-6">
+    <nav className="px-4 sm:px-6" aria-label="Main navigation">
       <div className="flex items-center justify-between">
         <ul className="flex flex-wrap gap-1 -mb-px">
           {navItems.map((item) => (
@@ -51,6 +51,7 @@ export function Navigation() {
                     ? 'border-[#0969da] text-[#0969da] dark:border-[#58a6ff] dark:text-[#58a6ff]'
                     : 'border-transparent text-[#57606a] hover:text-[#24292f] hover:border-[#d1d9de] dark:text-[#7d8590] dark:hover:text-[#e6edf3] dark:hover:border-[#30363d]'
                 }`}
+                aria-current={isActive(item) ? 'page' : undefined}
               >
                 {item.label}
               </Link>
@@ -60,8 +61,8 @@ export function Navigation() {
         <button
           onClick={handleShare}
           className="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium border-b-2 border-transparent text-[#57606a] hover:text-[#24292f] hover:border-[#d1d9de] dark:text-[#7d8590] dark:hover:text-[#e6edf3] dark:hover:border-[#30363d] transition-colors relative w-[100px]"
-          title="Copy link to this page"
-          aria-label="Share this page"
+          aria-label={copied ? 'Link copied to clipboard' : 'Copy link to this page'}
+          aria-live="polite"
         >
           {copied ? (
             <>

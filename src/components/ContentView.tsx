@@ -34,8 +34,8 @@ export function ContentView<T extends { content: string }>({
 
   if (loading) {
     return (
-      <section className="text-center py-12 text-[#57606a] dark:text-[#7d8590]">
-        <p>Loading...</p>
+      <section className="text-center py-12 text-[#57606a] dark:text-[#7d8590]" aria-label="Loading content">
+        <p role="status" aria-live="polite">Loading...</p>
       </section>
     );
   }
@@ -47,12 +47,13 @@ export function ContentView<T extends { content: string }>({
           <Link
             to={backPath}
             className="inline-flex items-center gap-2 rounded-md bg-[#f6f8fa] px-3 py-1.5 text-sm font-medium text-[#24292f] hover:bg-[#e1e4e8] dark:bg-[#21262d] dark:text-[#e6edf3] dark:hover:bg-[#30363d] transition-colors border border-[#d1d9de] dark:border-[#30363d]"
+            aria-label="Go back"
           >
-            <ArrowLeft size={16} />
-            Back
+            <ArrowLeft size={16} aria-hidden="true" />
+            <span>Back</span>
           </Link>
         </div>
-        <div className="text-center py-12">
+        <div className="text-center py-12" role="alert">
           <p className="text-[#57606a] dark:text-[#7d8590] mb-4">{notFoundMessage}</p>
           <Link
             to={backPath}
@@ -71,9 +72,10 @@ export function ContentView<T extends { content: string }>({
         <Link
           to={backPath}
           className="inline-flex items-center gap-2 rounded-md bg-[#f6f8fa] px-3 py-1.5 text-sm font-medium text-[#24292f] hover:bg-[#e1e4e8] dark:bg-[#21262d] dark:text-[#e6edf3] dark:hover:bg-[#30363d] transition-colors border border-[#d1d9de] dark:border-[#30363d]"
+          aria-label="Go back"
         >
-          <ArrowLeft size={16} />
-          Back
+          <ArrowLeft size={16} aria-hidden="true" />
+          <span>Back</span>
         </Link>
       </div>
 

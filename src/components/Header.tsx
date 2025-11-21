@@ -58,7 +58,7 @@ export function Header() {
       </div>
 
       {/* Visual separator - full width */}
-      <div className="w-full border-t border-[#d1d9de] dark:border-[#30363d]"></div>
+      <hr className="w-full border-t border-[#d1d9de] dark:border-[#30363d] m-0" aria-hidden="true" />
 
       {/* Navigation */}
       <div className="mx-auto max-w-4xl">

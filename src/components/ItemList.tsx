@@ -17,9 +17,10 @@ interface ItemListProps {
 export function ItemList({ items, basePath, emptyMessage, loading = false }: ItemListProps) {
   if (loading) {
     return (
-      <section className="space-y-6">
-        <div className="flex items-center justify-center py-12">
-          <Loader2 className="h-6 w-6 animate-spin text-[#57606a] dark:text-[#7d8590]" />
+      <section className="space-y-6" aria-label="Loading content">
+        <div className="flex items-center justify-center py-12" role="status" aria-live="polite">
+          <Loader2 className="h-6 w-6 animate-spin text-[#57606a] dark:text-[#7d8590]" aria-hidden="true" />
+          <span className="sr-only">Loading...</span>
         </div>
       </section>
     );
@@ -44,7 +45,7 @@ export function ItemList({ items, basePath, emptyMessage, loading = false }: Ite
           </article>
         ))}
         {items.length === 0 && (
-          <p className="text-[#57606a] dark:text-[#7d8590] text-center py-12">
+          <p className="text-[#57606a] dark:text-[#7d8590] text-center py-12" role="status" aria-live="polite">
             {emptyMessage}
           </p>
         )}

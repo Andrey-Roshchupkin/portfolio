@@ -10,9 +10,13 @@ export function About() {
   }, []);
 
   return (
-    <section className="space-y-6">
+    <section className="space-y-6" aria-label="About me">
       <article className="markdown-body prose prose-slate dark:prose-invert max-w-none">
-        <ReactMarkdown>{content || 'Loading...'}</ReactMarkdown>
+        {content ? (
+          <ReactMarkdown>{content}</ReactMarkdown>
+        ) : (
+          <p role="status" aria-live="polite">Loading...</p>
+        )}
       </article>
     </section>
   );
