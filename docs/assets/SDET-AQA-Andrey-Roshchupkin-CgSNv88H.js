@@ -86,13 +86,17 @@ Specialist Degree in Cyber/Electronic Operations and Warfare
 
 **Languages & Frameworks:** TypeScript, JavaScript, Go, Playwright, WebdriverIO, Cypress, Cucumber
 
-**Testing Types:** UI, API, Integration, E2E, Regression, BDD, Performance
+**Testing Types:** UI, API, Integration, E2E, Regression, BDD, Performance, Load Testing
 
-**CI/CD & DevOps:** GitLab CI/CD, GitHub Actions, Docker, Git
+**CI/CD & DevOps:** GitLab CI/CD, GitHub Actions, Docker, Kubernetes, Git
 
 **Tools:** QASE, ReportPortal, Postman, Allure, JSON Schema
 
-**Architecture Patterns:** Page Object, Factory, Component Object, Element Object
+**AI & Tool Development:** AI integration in testing tools, custom tool development, WebAI
+
+**Architecture Patterns:** Page Object, Factory, Component Object, Element Object, OOP
+
+**Process & Documentation:** Test documentation management, SDLC/STLC process optimization, release acceleration
 
 **Soft Skills:** Documentation, mentoring, async collaboration, agile teamwork
 `;export{e as default};

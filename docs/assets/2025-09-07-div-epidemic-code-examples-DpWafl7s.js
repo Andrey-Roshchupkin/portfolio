@@ -2,13 +2,13 @@ const e=`---
 date: 2025-09-07
 ---
 
-# From &lt;div&gt; Hell to SEO Heaven: Code Examples
+# From \`<div>\` Hell to SEO Heaven: Code Examples
 
 Interactive code examples demonstrating the progression from non-semantic HTML to semantic HTML best practices.
 
 ## Overview
 
-This project provides interactive examples that accompany the article "From &lt;div&gt; Hell to SEO Heaven: Why Your Frontend Choices Can Make or Break Your Business". It demonstrates the real-world impact of semantic HTML on accessibility, SEO, and code maintainability.
+This project provides interactive examples that accompany the article "From \`<div>\` Hell to SEO Heaven: Why Your Frontend Choices Can Make or Break Your Business". It demonstrates the real-world impact of semantic HTML on accessibility, SEO, and code maintainability.
 
 ## Features
 
