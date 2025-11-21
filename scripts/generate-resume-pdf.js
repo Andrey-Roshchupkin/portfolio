@@ -22,31 +22,39 @@ async function generatePDF() {
   try {
     console.log('Generating resume PDF...');
     
-    // Create temporary CSS file
+    // Create temporary CSS file with compact styling
     const cssContent = `
       body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        line-height: 1.6;
+        font-size: 10pt;
+        line-height: 1.4;
         color: #24292f;
       }
       h1 {
         color: #24292f;
+        font-size: 18pt;
         border-bottom: 1px solid #d1d9de;
-        padding-bottom: 0.3em;
+        padding-bottom: 0.2em;
         margin-top: 0;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
       }
       h2 {
         color: #24292f;
+        font-size: 13pt;
         border-bottom: 1px solid #d1d9de;
-        padding-bottom: 0.3em;
-        margin-top: 24px;
-        margin-bottom: 16px;
+        padding-bottom: 0.2em;
+        margin-top: 12px;
+        margin-bottom: 8px;
       }
       h3 {
         color: #24292f;
-        margin-top: 24px;
-        margin-bottom: 16px;
+        font-size: 11pt;
+        margin-top: 10px;
+        margin-bottom: 6px;
+      }
+      p {
+        margin-top: 4px;
+        margin-bottom: 8px;
       }
       a {
         color: #0969da;
@@ -56,22 +64,26 @@ async function generatePDF() {
         text-decoration: underline;
       }
       ul, ol {
-        margin-top: 0;
-        margin-bottom: 16px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        padding-left: 20px;
       }
       li {
-        margin-bottom: 8px;
+        margin-bottom: 3px;
       }
       code {
         background-color: #f6f8fa;
-        padding: 2px 4px;
-        border-radius: 3px;
+        padding: 1px 3px;
+        border-radius: 2px;
         font-size: 85%;
       }
       hr {
         border: none;
         border-top: 1px solid #d1d9de;
-        margin: 24px 0;
+        margin: 10px 0;
+      }
+      strong {
+        font-weight: 600;
       }
     `;
     
@@ -84,13 +96,15 @@ async function generatePDF() {
         pdf_options: {
           format: 'A4',
           margin: {
-            top: '20mm',
-            right: '15mm',
-            bottom: '20mm',
-            left: '15mm',
+            top: '12mm',
+            right: '12mm',
+            bottom: '12mm',
+            left: '12mm',
           },
+          printBackground: true,
         },
         stylesheet: cssPath,
+        body_class: 'markdown-body',
       }
     );
 
