@@ -26,15 +26,24 @@ export function Resume() {
   };
 
   const handleDownloadMD = () => {
-    const blob = new Blob([content], { type: 'text/markdown' });
-    const url = URL.createObjectURL(blob);
+    // Use data URL approach which works better in embedded browsers (Telegram, etc.)
+    const dataUrl = `data:text/markdown;charset=utf-8,${encodeURIComponent(content)}`;
+    
+    // Try standard download first
     const link = document.createElement('a');
-    link.href = url;
+    link.href = dataUrl;
     link.download = 'SDET-AQA-Andrey-Roshchupkin.md';
+    link.style.display = 'none';
     document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+    
+    try {
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      // If click fails (e.g., in embedded browsers), open in new tab
+      document.body.removeChild(link);
+      window.open(dataUrl, '_blank');
+    }
   };
 
   const handleDownloadPDF = () => {
