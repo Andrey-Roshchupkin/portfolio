@@ -14,9 +14,11 @@ const e=`# Andrey Roshchupkin
 
 ## Summary
 
-QA Engineer specializing in building and scaling advanced test automation solutions across multiple platforms — including desktop (Electron), web (desktop & mobile), and native mobile applications. I design and implement reliable frameworks from scratch using Playwright, WebdriverIO, and Cypress for E2E, API, and integration testing.
+I don't just write tests—I build tools that solve real problems. When I needed a teleprompter with speech recognition, I built one. When I saw accessibility testing gaps, I created a Chrome extension using WebAI. When I noticed the disconnect between HTTP theory and practice, I built a demo server and wrote about it.
 
-My role extends beyond testing — I drive test architecture decisions, optimize CI/CD pipelines, and mentor teams to achieve higher quality standards. I actively leverage AI tools to boost efficiency and explore innovative testing approaches. My goal is to ensure stable, high-quality product delivery that directly supports business success.
+My automation frameworks don't just work—they replace entire teams. I've cut test execution from 2.5 hours to 30 minutes, eliminated flaky tests, and built systems that do the work of three QA engineers at a fraction of the cost. I speak at conferences, write technical articles, and create open-source tools because I believe in sharing knowledge, not hoarding it.
+
+I'm the engineer who questions "why" when everyone else accepts "how it's always been done."
 
 ---
 
