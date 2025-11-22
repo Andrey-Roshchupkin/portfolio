@@ -14,13 +14,11 @@
 
 ## Summary
 
-I don't just write tests—I build tools that solve real problems. When I needed a teleprompter with speech recognition, I built one—and part of my solution was used for MVP functionality in a product at my main job. When I saw accessibility testing gaps, I created a Chrome extension using WebAI. When I noticed the disconnect between HTTP theory and practice, I built a demo server and wrote about it.
+Organically grew from manual QA to automation engineer, building high-performance test architectures with exceptional ROI—cutting execution time and replacing the repetitive work of QA engineers at a fraction of the cost. I mentor teams, write technical articles, continuously learn new technologies, and integrate AI into testing workflows to solve real problems. My automation frameworks act as virtual QA engineers, complementing teams while delivering measurable business impact.
 
-My automation frameworks don't just work—they replace entire teams. I've cut test execution from 2.5 hours to 30 minutes, eliminated flaky tests, and built systems that do the work of three QA engineers at a fraction of the cost. I speak at conferences, write technical articles, and create open-source tools because I believe in sharing knowledge, not hoarding it.
-
-I'm the engineer who questions "why" when everyone else accepts "how it's always been done."
-
-**I'm open to collaboration** — whether you're an HR professional looking for a QA engineer, a developer working on an interesting project, or someone with a cool idea worth building together. Check out my [portfolio](https://andrey-roshchupkin.github.io/portfolio) to see my work, read my articles, and explore my projects. Let's connect and create something meaningful.
+I believe that if it's difficult, it's possible — in work, in training, and in life.
+I choose paths that demand effort because that's where real growth hides.
+Challenges don't intimidate me; they motivate me to outperform who I was yesterday — so, do you have a new challenge for me?
 
 ---
 
