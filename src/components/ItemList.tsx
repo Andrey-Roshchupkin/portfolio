@@ -12,9 +12,10 @@ interface ItemListProps {
   basePath: string;
   emptyMessage: string;
   loading?: boolean;
+  ariaLabel?: string;
 }
 
-export function ItemList({ items, basePath, emptyMessage, loading = false }: ItemListProps) {
+export function ItemList({ items, basePath, emptyMessage, loading = false, ariaLabel }: ItemListProps) {
   if (loading) {
     return (
       <section className="space-y-6" aria-label="Loading content">
@@ -27,13 +28,14 @@ export function ItemList({ items, basePath, emptyMessage, loading = false }: Ite
   }
 
   return (
-    <section className="space-y-6">
-      <div className="space-y-3">
+    <section className="space-y-6" aria-label={ariaLabel || (emptyMessage.includes('post') ? 'Articles list' : emptyMessage.includes('project') ? 'Projects list' : emptyMessage.includes('speech') ? 'Speeches list' : 'Items list')}>
+      <ul className="space-y-3" role="list">
         {items.map((item) => (
-          <article key={item.slug}>
+          <li key={item.slug}>
             <Link
               to={`${basePath}/${item.slug}`}
               className="group block rounded-lg border border-[#d1d9de] bg-white p-5 transition-all hover:border-[#0969da] hover:shadow-sm hover:bg-[#f6f8fa] dark:border-[#30363d] dark:bg-[#161b22] dark:hover:border-[#58a6ff] dark:hover:bg-[#21262d]"
+              aria-label={`${item.title}, published on ${item.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
             >
               <div className="mb-2 text-xs font-medium text-[#57606a] dark:text-[#7d8590] uppercase tracking-wide">
                 {item.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -42,14 +44,16 @@ export function ItemList({ items, basePath, emptyMessage, loading = false }: Ite
                 {item.title}
               </h3>
             </Link>
-          </article>
+          </li>
         ))}
         {items.length === 0 && (
-          <p className="text-[#57606a] dark:text-[#7d8590] text-center py-12" role="status" aria-live="polite">
-            {emptyMessage}
-          </p>
+          <li>
+            <p className="text-[#57606a] dark:text-[#7d8590] text-center py-12" role="status" aria-live="polite">
+              {emptyMessage}
+            </p>
+          </li>
         )}
-      </div>
+      </ul>
     </section>
   );
 }

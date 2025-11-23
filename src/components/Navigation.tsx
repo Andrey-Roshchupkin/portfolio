@@ -64,6 +64,7 @@ export function Navigation() {
           className="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium border-b-2 border-transparent text-[#57606a] hover:text-[#24292f] hover:border-[#d1d9de] dark:text-[#7d8590] dark:hover:text-[#e6edf3] dark:hover:border-[#30363d] transition-colors relative w-[100px]"
           aria-label={copied ? 'Link copied to clipboard' : 'Copy link to this page'}
           aria-live="polite"
+          title="Copy current page URL to clipboard. Chat data remains confidential."
         >
           {copied ? (
             <>

@@ -13,6 +13,6 @@ export function SpeechList() {
     });
   }, []);
 
-  return <ItemList items={speeches as ListItem[]} basePath="/speech" emptyMessage="No speeches found." loading={loading} />;
+  return <ItemList items={speeches as ListItem[]} basePath="/speech" emptyMessage="No speeches found." loading={loading} ariaLabel="Speeches list" />;
 }
 

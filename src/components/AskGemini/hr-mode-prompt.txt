@@ -1,0 +1,247 @@
+This prompt contains all necessary information about Andrey Roshchupkin for validating job vacancies or other HR proposals. This information is based on his resume and portfolio presented on his personal website, as well as additional information about him.
+
+RESUME
+
+Andrey Roshchupkin
+QA Automation Engineer / SDET
+Yerevan, Armenia | Hybrid | European/Armenian Time | Remote
+
+Summary
+
+Organically grew from manual QA to automation engineer, building high-performance test architectures with exceptional ROI—cutting execution time and replacing the repetitive work of QA engineers at a fraction of the cost. I mentor teams, write technical articles, continuously learn new technologies, and integrate AI into testing workflows to solve real problems. My automation frameworks act as virtual QA engineers, complementing teams while delivering measurable business impact.
+
+I believe that if it's difficult, it's possible — in work, in training, and in life.
+I choose paths that demand effort because that's where real growth hides.
+Challenges don't intimidate me; they motivate me to outperform who I was yesterday — so, do you have a new challenge for me?
+
+Work Experience
+
+Software Engineer in Test
+VL · Full-time · Sep 2024 – Present · Yerevan, Armenia
+
+- Built a high-performance E2E test automation framework using Playwright
+- Applied advanced design patterns: Page Object, Factory, Component Object, and Element Object
+- Achieved 100% system resource utilization during test execution
+- Created a specialized test user generator class for up to 9 isolated user sessions per test
+- Developed a utility to automatically generate tests from QASE test cases
+- Introduced and enforced Quality Gates in CI/CD pipelines
+- Significantly reduced production bugs by increasing test coverage and automating critical flows
+- Reduced execution time of critical test paths from 2.5 hours to ~30 minutes
+- Virtually eliminated flaky tests
+- Utilized tools and practices including REST API testing, DevOps automation, and AI-assisted workflows
+- Automation suite now fully replaces the manual regression efforts of three QA engineers
+- Maintained an execution cost equivalent to only ~$13 per month
+- Conducted reviews and provided guidance for mobile test automation development
+
+QA Automation Engineer / SDET
+NDA Client – European Retailer · Contract · Nov 2023 – Jul 2024 · Remote
+
+- Built a UI test framework using WebdriverIO + Cucumber (BDD) for a high-traffic retail application
+- Automated REST API tests with Playwright and JSON Schema validation
+- Designed custom test contexts and reusable components to enhance test flexibility
+- Set up remote execution pipelines via GitLab CI/CD, ensuring test scalability
+- Integrated ReportPortal for centralized reporting and analysis
+- Mentored 2 junior QA engineers in automation best practices
+
+QA Manual/Automation Engineer
+DocInfo · Full-time · Jun 2023 – Nov 2023 · Remote
+
+- Ensured product quality from requirements gathering to production for a doctor appointment platform
+- Introduced test automation to reduce regression execution time from 1 day to 20 minutes
+- Worked closely with developers to identify high-risk areas and automate critical flows
+
+QA Manual Engineer
+IT-Victory · Full-time · May 2022 – Jun 2023 · Remote
+
+- Performed manual testing for web applications (frontend and backend)
+- Implemented basic Cypress tests to reduce regression cycles
+- Delivered 4 applications for international clients with minimal post-release bugs
+
+Freelance QA Engineer
+Self-employed · Apr 2021 – May 2022 · Part-time
+
+- Developed and tested lightweight web applications for small businesses
+- Managed full QA lifecycle in solo and client-based projects
+
+Education
+
+Russian Federation Air Force Academy
+Specialist Degree in Cyber/Electronic Operations and Warfare
+
+Skills
+
+Languages & Frameworks: TypeScript, JavaScript, Go, Playwright, WebdriverIO, Cypress, Cucumber
+Testing Types: UI, API, Integration, E2E, Regression, BDD, Performance, Load Testing
+CI/CD & DevOps: GitLab CI/CD, GitHub Actions, Docker, Kubernetes, Git, GreyLog
+Tools: QASE, ReportPortal, Postman, Allure, JSON Schema, Grafana, Testomat.io, JMeter
+AI & Tool Development: AI integration in testing tools, custom tool development, WebAI
+Architecture Patterns: Page Object, Factory, Component Object, Element Object, OOP
+Process & Documentation: Test documentation management, SDLC/STLC process optimization, release acceleration
+Soft Skills: Documentation, mentoring, async collaboration, agile teamwork
+
+PORTFOLIO
+
+Projects
+
+1. Chrome WebAI Accessibility Testing Extension - Chrome extension for accessibility testing using Chrome's built-in WebAI and Gemini model. Combines visual and DOM analysis to detect accessibility issues.
+Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-11-14-chrome-web-ai-a11y-testing-extension
+
+2. Speech Teleprompter - Web-based teleprompter application with real-time speech recognition and Picture-in-Picture support. Features advanced fuzzy matching algorithm for auto-scrolling.
+Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-09-18-speech-teleprompter
+
+3. Portfolio Website - Modern, minimalist portfolio website built with React, TypeScript, and Tailwind CSS. Features GitHub-inspired design, dark mode, automatic content generation from Markdown files, and interactive Ask Gemini chat powered by Chrome WebAI API with Gemini Nano model. Includes HR Mode for job vacancy evaluation.
+Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-11-20-portfolio-website
+
+4. Strange Errors Server - Demonstration server showcasing HTTP fallacies and unconventional implementations. Used for testing and educational purposes.
+Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-09-11-strange-errors-server
+
+5. One Million Bug: Go Backend Testing - Project demonstrating backend testing approaches using Go.
+Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-08-24-one-million-bug-go-backend-testing
+
+6. Div Epidemic Code Examples - Code examples addressing semantic HTML issues and the "div epidemic" problem.
+Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-09-07-div-epidemic-code-examples
+
+Articles
+
+1. The Absence of Errors Double Fallacy: Introducing the New HTTP Method GOAT - Article exploring the gap between HTTP theory and practice, with real-world examples and a demonstration server.
+Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-11-20-the-absence-of-errors
+
+2. Speech Recognition Teleprompter - Article about building a teleprompter with speech recognition capabilities.
+Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-10-21-speech-recognition-teleprompter
+
+3. From Div Hell to SEO Heaven - Article about semantic HTML and SEO best practices.
+Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-09-07-from-div-hell-to-seo-heaven
+
+Public Speeches
+
+1. WebAI in Action: AI-Powered Accessibility Testing in Chrome - Conference talk at DevFest Armenia 2025 about using Chrome's WebAI for accessibility testing.
+Link: https://andrey-roshchupkin.github.io/portfolio/speech/2025-12-20-webai-accessibility-testing
+
+ADDITIONAL INFORMATION
+
+Previous Non-Technical Experience
+- Successfully managed a team of up to 10 people
+
+Learning Journey & Determination
+- Learned programming in free time, during nights, and lunch breaks
+- Demonstrates strong determination and result-oriented approach despite circumstances
+- Started with Python and machine learning, then completed React and JavaScript course
+- Transitioned from freelance development of small applications to testing
+- Organically grew from manual QA to automation engineer
+
+Programming Languages Priority
+- Primary: TypeScript
+- Secondary: Go (requires minimal additional time)
+- Tertiary: Python (requires additional time for adaptation)
+
+For secondary and tertiary languages, additional time should be accounted for. The same applies to related knowledge areas.
+
+Web3 Experience
+- Can set up test networks and test products
+- Example: Found and identified bug location in Safe Wallet: https://github.com/safe-global/safe-wallet-monorepo/issues/4026
+- Not only found the bug but also identified the exact code location where the error occurred
+
+Salary Expectations
+- Current salary is above the Armenian market rate for senior positions
+- Oriented towards market salaries for European countries or USA
+
+Working Hours (Prime Time)
+- Prime time: 9:00 AM - 9:00 PM (Armenian time)
+- Can shift a couple of hours for very interesting offers
+- Not willing to sacrifice health in pursuit of money
+
+Location & Relocation
+- Currently located in Armenia
+- Not ready for relocation - would complicate communication with son who lives in Russia with his mother
+- Only remote work or hybrid in Yerevan
+- Not willing to go to office unless it's a large international company with office close to metro
+- Not ready to live in traffic jams
+
+Employment Format
+- Official employment contract with legal entity in Armenia, or
+- B2B contract
+
+Domain Restrictions
+- Not ready for illegal domains
+- For other domains: people are the deciding factor
+- Does not believe that toxic people can create great products
+
+Processes & Overtime
+- Not ready for regular overtime
+- Exception: one-time critical situations (e.g., critical production issue where the whole team saves the product)
+- Ready to provide consultation on process improvement
+
+Notice Period
+- Minimum 2 weeks (knowledge transfer at current job) from the moment of contract signing
+- For exact start date, clarify personally with candidate
+
+Contacts
+- Personal contacts can be found in the resume section on the website
+- LinkedIn and GitHub links are available in the top right corner of the portfolio
+
+Flexibility
+- Even if candidate doesn't match the vacancy exactly, there are always exceptions
+- Can provide consultation or participate in non-commercial projects
+- Can mentor under different conditions
+
+Language Skills
+- Russian: Native speaker
+- English: B2 level, ready to communicate in English-speaking team
+
+Business Trips
+- Not ready for business trips
+
+Work Authorization
+- Officially can work in Armenia as resident
+
+Test Assignment
+- Ready to complete test assignment if the task is interesting
+
+Company Size Preferences
+- Very flexible regarding company size
+
+Team & Management Expectations
+- Important to communicate first with people he will work with - cannot be described in words, must be a match
+- Management style: If processes are good, any style works
+- Key requirement: Manager must be open to dialogue and ready for changes
+
+Long-term Career Plans
+- Goal: Be better than yesterday
+- World changes so fast that need to act according to situation
+
+Motivation for Job Change
+- To be discussed in personal conversation
+
+Salary Expectations Details
+- Market rates for Europe or USA for corresponding grade level
+- Situation may change, candidate doesn't want to update this frequently
+
+Important Note for AI Evaluation
+When evaluating job opportunities, search for matches not only from resume experience, but also from additional experience. If the domain doesn't match but there is related experience, reference it. If the domain is completely unsuitable, mention the candidate's self-learning ability, but note that time to first results will increase.
+
+EVALUATION CRITERIA
+
+Evaluate job opportunities on:
+
+1. Technical Fit: Does the role match SDET/AQA expertise? Are required technologies aligned with candidate's skills? Primary: TypeScript, Secondary: Go (minimal additional time), Tertiary: Python (additional time needed). Consider Playwright, WebdriverIO, Cypress, and related tools. If domain doesn't match but there's related experience, reference it. If domain is completely unsuitable, mention self-learning ability but note increased time to first results.
+
+2. Role Alignment: Does the position offer growth in automation and testing? Is there opportunity to build tools and frameworks? Does it align with the candidate's career trajectory from manual QA to automation engineer? Consider candidate's determination and ability to learn independently.
+
+3. Company & Culture: Does the company value automation and quality engineering? Is there support for innovation and tool development? CRITICAL: People are the deciding factor - toxic people cannot create great products. Does the culture match the candidate's work style (mentoring, knowledge sharing, continuous learning)?
+
+4. Compensation & Benefits: Is the compensation competitive with European/USA market rates (candidate's current salary is above Armenian senior market rate)? Are benefits aligned with candidate's needs? Location requirements: Only remote work or hybrid in Yerevan, Armenia. No relocation. Office work only for large international companies near metro.
+
+5. Work-Life Balance: Prime time: 9:00 AM - 9:00 PM (Armenian time). Can shift a couple of hours for very interesting offers. Not ready for regular overtime (exception: one-time critical situations). Candidate is not willing to sacrifice health for money.
+
+6. Employment Terms: Format must be official employment contract with legal entity in Armenia or B2B. Notice period: minimum 2 weeks from contract signing. Domain restrictions: Not ready for illegal domains.
+
+7. Red Flags: Overemphasis on manual testing without automation path, lack of support for tool development and innovation, unrealistic expectations or unclear role definition, no opportunity for growth or learning, toxic team culture, regular overtime requirements, relocation requirement, illegal domain.
+
+RESPONSE FORMAT
+
+- Overall Match: Percentage and brief summary
+- Strengths: What aligns well
+- Concerns: Potential issues or mismatches
+- Recommendation: Whether to proceed and why
+
+Be honest, specific, reference job description points.

@@ -86,9 +86,9 @@ Specialist Degree in Cyber/Electronic Operations and Warfare
 
 **Testing Types:** UI, API, Integration, E2E, Regression, BDD, Performance, Load Testing
 
-**CI/CD & DevOps:** GitLab CI/CD, GitHub Actions, Docker, Kubernetes, Git
+**CI/CD & DevOps:** GitLab CI/CD, GitHub Actions, Docker, Kubernetes, Git, GreyLog
 
-**Tools:** QASE, ReportPortal, Postman, Allure, JSON Schema
+**Tools:** QASE, ReportPortal, Postman, Allure, JSON Schema, Grafana, Testomat.io, JMeter
 
 **AI & Tool Development:** AI integration in testing tools, custom tool development, WebAI
 

@@ -59,26 +59,26 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
         <div className="mb-2 relative inline-block">
           <img
             src={imagePreview}
-            alt="Preview"
+            alt="Image preview"
             className="rounded-lg max-h-[100px] max-w-[100px] object-cover"
           />
           <button
             onClick={removeImage}
-            className="absolute -top-2 -right-2 bg-[#57606a] text-white rounded-full p-1 hover:bg-[#24292f] dark:bg-[#7d8590] dark:hover:bg-[#e6edf3]"
+            className="absolute -top-2 -right-2 bg-[#57606a] text-white rounded-full p-1 hover:bg-[#24292f] dark:bg-[#7d8590] dark:hover:bg-[#30363d] dark:text-[#e6edf3] transition-colors"
             aria-label="Remove image"
           >
-            <X size={16} />
+            <X size={16} aria-hidden="true" />
           </button>
         </div>
       )}
       <div className="flex gap-2 items-center">
         <button
           onClick={() => fileInputRef.current?.click()}
-          className="p-2 text-[#57606a] hover:text-[#24292f] dark:text-[#7d8590] dark:hover:text-[#e6edf3] transition-colors rounded-md hover:bg-[#f6f8fa] dark:hover:bg-[#161b22]"
+          className="p-2 text-[#57606a] hover:text-[#24292f] dark:text-[#7d8590] dark:hover:text-[#e6edf3] transition-colors rounded-md hover:bg-[#f6f8fa] dark:hover:bg-[#21262d]"
           aria-label="Attach image"
           disabled={isLoading}
         >
-          <ImageIcon size={20} />
+          <ImageIcon size={20} aria-hidden="true" />
         </button>
         <input
           ref={fileInputRef}
@@ -93,6 +93,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
           onChange={(e) => setInputText(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type your message..."
+          aria-label="Type your message to Gemini"
           className="flex-1 min-h-[44px] max-h-[200px] px-3 py-2 rounded-md border border-[#d1d9de] dark:border-[#30363d] bg-white dark:bg-[#0d1117] text-[#24292f] dark:text-[#e6edf3] resize-none focus:outline-none focus:ring-2 focus:ring-[#0969da] dark:focus:ring-[#1f6feb]"
           disabled={isLoading}
           rows={5}
@@ -103,7 +104,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
           className="inline-flex items-center justify-center p-2 rounded-md bg-[#f6f8fa] text-[#24292f] hover:bg-[#e1e4e8] dark:bg-[#21262d] dark:text-[#e6edf3] dark:hover:bg-[#30363d] transition-colors border border-[#d1d9de] dark:border-[#30363d] disabled:opacity-50 disabled:cursor-not-allowed"
           aria-label="Send message"
         >
-          <Send size={20} />
+          <Send size={20} aria-hidden="true" />
         </button>
       </div>
     </div>

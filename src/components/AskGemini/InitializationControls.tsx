@@ -5,16 +5,20 @@ interface InitializationControlsProps {
   initState: InitState;
   webAIStatus: WebAIStatus | null;
   canInitialize: boolean;
+  hrMode: boolean;
   onInitialize: () => void;
   onClear: () => void;
+  onToggleHrMode: () => void;
 }
 
 export function InitializationControls({
   initState,
   webAIStatus,
   canInitialize,
+  hrMode,
   onInitialize,
   onClear,
+  onToggleHrMode,
 }: InitializationControlsProps) {
   return (
     <>
@@ -35,7 +39,7 @@ export function InitializationControls({
         </div>
       )}
 
-      <div className="flex gap-3 mb-4">
+      <div className="flex gap-3 mb-4" role="toolbar" aria-label="Model initialization controls">
         <button
           onClick={onInitialize}
           disabled={initState !== 'idle' || !canInitialize}
@@ -75,7 +79,7 @@ export function InitializationControls({
           disabled={initState !== 'initialized'}
           className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
             initState === 'initialized'
-              ? 'bg-[#f6f8fa] text-[#24292f] border border-[#d1d9de] hover:bg-[#f3f4f6] dark:bg-[#161b22] dark:text-[#e6edf3] dark:border-[#30363d] dark:hover:bg-[#21262d]'
+              ? 'bg-[#f6f8fa] text-[#24292f] border border-[#d1d9de] hover:bg-[#e1e4e8] dark:bg-[#161b22] dark:text-[#e6edf3] dark:border-[#30363d] dark:hover:bg-[#21262d]'
               : 'bg-[#f6f8fa] text-[#57606a] border border-[#d1d9de] cursor-not-allowed opacity-50 dark:bg-[#161b22] dark:text-[#7d8590] dark:border-[#30363d]'
           }`}
           aria-label="Clear dialog"
@@ -83,6 +87,23 @@ export function InitializationControls({
         >
           Clear dialog
         </button>
+
+        {initState === 'initialized' && (
+          <label 
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium cursor-pointer border border-[#d1d9de] dark:border-[#30363d] bg-[#f6f8fa] dark:bg-[#161b22] hover:bg-[#e1e4e8] dark:hover:bg-[#21262d] transition-colors"
+            title={hrMode ? 'Disable HR mode' : 'Enable HR mode to evaluate job descriptions against Andrey\'s profile'}
+          >
+            <input
+              type="checkbox"
+              checked={hrMode}
+              onChange={onToggleHrMode}
+              className="w-4 h-4 rounded border-[#d1d9de] dark:border-[#30363d] text-[#0969da] dark:text-[#1f6feb] focus:ring-2 focus:ring-[#0969da] dark:focus:ring-[#1f6feb] cursor-pointer"
+              aria-label="Toggle HR mode"
+              aria-describedby="hr-mode-description"
+            />
+            <span id="hr-mode-description" className="text-[#24292f] dark:text-[#e6edf3]">HR Mode</span>
+          </label>
+        )}
       </div>
     </>
   );

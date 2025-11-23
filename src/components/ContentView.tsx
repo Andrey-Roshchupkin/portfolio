@@ -79,7 +79,7 @@ export function ContentView<T extends { content: string }>({
         </Link>
       </div>
 
-      <article className="markdown-body prose prose-slate dark:prose-invert max-w-none">
+      <article className="markdown-body prose prose-slate dark:prose-invert max-w-none" aria-label="Content">
         <ReactMarkdown>{item.content}</ReactMarkdown>
       </article>
     </section>

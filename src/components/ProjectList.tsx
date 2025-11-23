@@ -13,6 +13,6 @@ export function ProjectList() {
     });
   }, []);
 
-  return <ItemList items={projects as ListItem[]} basePath="/project" emptyMessage="No projects found." loading={loading} />;
+  return <ItemList items={projects as ListItem[]} basePath="/project" emptyMessage="No projects found." loading={loading} ariaLabel="Projects list" />;
 }
 

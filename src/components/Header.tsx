@@ -42,7 +42,7 @@ export function Header() {
               </a>
             </div>
 
-            <div className="h-5 w-px bg-gray-200 dark:bg-[#30363d]"></div>
+            <span role="separator" aria-hidden="true" className="h-5 w-px bg-gray-200 dark:bg-[#30363d]"></span>
 
             <button 
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown';
 import type { Message } from './types';
 
 interface ChatMessageProps {
@@ -21,7 +22,13 @@ export function ChatMessage({ message }: ChatMessageProps) {
             className="mb-2 rounded max-w-full h-auto max-h-[300px]"
           />
         )}
-        <p className="whitespace-pre-wrap text-sm">{message.content}</p>
+        {message.role === 'assistant' ? (
+          <div className="markdown-body prose prose-slate dark:prose-invert max-w-none text-sm">
+            <ReactMarkdown>{message.content}</ReactMarkdown>
+          </div>
+        ) : (
+          <p className="whitespace-pre-wrap text-sm">{message.content}</p>
+        )}
       </div>
     </div>
   );

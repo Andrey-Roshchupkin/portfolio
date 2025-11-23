@@ -13,6 +13,6 @@ export function PostList() {
     });
   }, []);
 
-  return <ItemList items={posts as ListItem[]} basePath="/post" emptyMessage="No posts found." loading={loading} />;
+  return <ItemList items={posts as ListItem[]} basePath="/post" emptyMessage="No posts found." loading={loading} ariaLabel="Articles list" />;
 }
 
