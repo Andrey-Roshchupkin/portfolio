@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build && node scripts/generate-resume-pdf.js && cp docs/index.html docs/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && git add docs && git commit -m 'Deploy to GitHub Pages' && git push origin main"
+    "deploy": "npm run build && git add . && git commit -m 'Deploy to GitHub Pages' && git push origin main"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
