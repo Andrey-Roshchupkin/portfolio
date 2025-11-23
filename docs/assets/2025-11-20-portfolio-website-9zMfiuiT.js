@@ -8,7 +8,7 @@ A modern, minimalist portfolio website built with React, TypeScript, and Tailwin
 
 ## Overview
 
-This portfolio website features a clean, GitHub-inspired design with dark mode support. It includes multiple content sections that automatically read Markdown files and generate listings: articles, projects, public speeches, along with dedicated pages for "About Me" and a downloadable resume.
+This portfolio website features a clean, GitHub-inspired design with dark mode support. It includes multiple content sections that automatically read Markdown files and generate listings: articles, projects, public speeches, along with dedicated pages for "About Me", a downloadable resume, and an interactive "Ask Gemini" chat powered by Chrome's WebAI API.
 
 ## Features
 
@@ -22,6 +22,12 @@ This portfolio website features a clean, GitHub-inspired design with dark mode s
   - PDF download (generated at build time using \`md-to-pdf\`)
   - Copy to clipboard functionality
   - Visual feedback for user actions
+- **Ask Gemini** - Interactive AI chat powered by Chrome's built-in WebAI API and Gemini Nano model:
+  - Multimodal input (text and images)
+  - HR Mode for job vacancy evaluation against candidate profile
+  - Chat history persistence with localStorage
+  - Automatic model download and initialization
+  - Semantic HTML and ARIA attributes for accessibility
 
 ### UI/UX Features
 - **Theme System** - Dark/Light/System theme toggle with localStorage persistence
@@ -37,6 +43,9 @@ This portfolio website features a clean, GitHub-inspired design with dark mode s
 - **Component Architecture** - Reusable components (ItemList, ContentView) to reduce duplication
 - **Markdown Processing** - Centralized utility functions for parsing and metadata extraction
 - **Automatic PDF Generation** - Resume PDF generated during build process
+- **WebAI Integration** - Chrome WebAI API integration with Gemini Nano for on-device AI processing
+- **Custom Hooks** - Modular architecture with custom hooks (useGeminiSession, useChatMessages, useLocalStorage, useWebAIStatus)
+- **Accessibility** - Semantic HTML, ARIA attributes, and keyboard navigation support
 
 ## Technology Stack
 
@@ -62,8 +71,8 @@ portfolio/
 │   ├── about/        # About me content
 │   └── resume/       # Resume markdown and PDF
 ├── src/
-│   ├── components/   # React components
-│   ├── hooks/        # Custom hooks (useTheme)
+│   ├── components/   # React components (including AskGemini with sub-components)
+│   ├── hooks/        # Custom hooks (useTheme, useGeminiSession, useChatMessages, useLocalStorage, useWebAIStatus)
 │   ├── utils/        # Utility functions (markdown processing)
 │   └── config.ts     # Site configuration
 ├── scripts/          # Build scripts (PDF generation)
