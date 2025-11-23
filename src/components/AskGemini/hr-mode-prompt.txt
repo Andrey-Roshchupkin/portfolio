@@ -1,5 +1,7 @@
 This prompt contains all necessary information about Andrey Roshchupkin for validating job vacancies or other HR proposals. This information is based on his resume and portfolio presented on his personal website, as well as additional information about him.
 
+IMPORTANT: Always respond in the same language as the incoming request or as determined by the interlocutor.
+
 RESUME
 
 Andrey Roshchupkin
