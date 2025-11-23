@@ -1,11 +1,13 @@
-import { Loader2 } from 'lucide-react';
-import type { InitState, WebAIStatus } from './types';
+import { useState } from 'react';
+import { Loader2, Copy, Check } from 'lucide-react';
+import type { InitState, WebAIStatus, Message } from './types';
 
 interface InitializationControlsProps {
   initState: InitState;
   webAIStatus: WebAIStatus | null;
   canInitialize: boolean;
   hrMode: boolean;
+  messages: Message[];
   onInitialize: () => void;
   onClear: () => void;
   onToggleHrMode: () => void;
@@ -16,14 +18,41 @@ export function InitializationControls({
   webAIStatus,
   canInitialize,
   hrMode,
+  messages,
   onInitialize,
   onClear,
   onToggleHrMode,
 }: InitializationControlsProps) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyConversation = async () => {
+    if (messages.length === 0) return;
+
+    const conversationText = messages
+      .map((msg) => {
+        const role = msg.role === 'user' ? 'User' : 'Gemini';
+        const content = msg.content || '';
+        return `${role}: ${content}`;
+      })
+      .join('\n\n');
+
+    try {
+      await navigator.clipboard.writeText(conversationText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy conversation:', error);
+    }
+  };
   return (
     <>
       {webAIStatus?.availability === 'downloading' && (
-        <div className="rounded-lg border border-[#d1d9de] dark:border-[#30363d] bg-[#f6f8fa] dark:bg-[#161b22] p-4">
+        <section 
+          className="rounded-lg border border-[#d1d9de] dark:border-[#30363d] bg-[#f6f8fa] dark:bg-[#161b22] p-4"
+          aria-label="Model download status"
+          role="status"
+          aria-live="polite"
+        >
           <p className="text-sm font-medium text-[#24292f] dark:text-[#e6edf3] mb-2">
             {webAIStatus.message}
           </p>
@@ -36,7 +65,7 @@ export function InitializationControls({
               ))}
             </ul>
           )}
-        </div>
+        </section>
       )}
 
       <div className="flex gap-3 mb-4" role="toolbar" aria-label="Model initialization controls">
@@ -103,6 +132,29 @@ export function InitializationControls({
             />
             <span id="hr-mode-description" className="text-[#24292f] dark:text-[#e6edf3]">HR Mode</span>
           </label>
+        )}
+
+        {initState === 'initialized' && messages.length > 0 && (
+          <button
+            onClick={handleCopyConversation}
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors border border-[#d1d9de] dark:border-[#30363d] bg-[#f6f8fa] text-[#24292f] hover:bg-[#e1e4e8] dark:bg-[#161b22] dark:text-[#e6edf3] dark:hover:bg-[#21262d] w-[125px]"
+            aria-label={copied ? 'Chat copied to clipboard' : 'Copy chat to clipboard'}
+            aria-live="polite"
+            aria-atomic="true"
+            title="Copy chat to clipboard"
+          >
+            {copied ? (
+              <>
+                <Check size={16} aria-hidden="true" className="text-[#1a7f37] dark:text-[#3fb950]" />
+                <span className="text-[#1a7f37] dark:text-[#3fb950]">Copied!</span>
+              </>
+            ) : (
+              <>
+                <Copy size={16} aria-hidden="true" />
+                <span>Copy chat</span>
+              </>
+            )}
+          </button>
         )}
       </div>
     </>

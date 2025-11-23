@@ -65,6 +65,7 @@ export function AskGemini() {
         webAIStatus={webAIStatus}
         canInitialize={canInitialize}
         hrMode={hrMode}
+        messages={messages}
         onInitialize={createSession}
         onClear={handleClear}
         onToggleHrMode={handleToggleHrMode}
