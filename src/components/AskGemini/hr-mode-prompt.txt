@@ -165,7 +165,7 @@ Employment Format
 
 Domain Restrictions
 - Not ready for illegal domains
-- Not interested in testing mobile games (ONLY iOS/Android mobile games)
+- Not interested in testing mobile games
 - For other domains: people are the deciding factor
 - Does not believe that toxic people can create great products
 
@@ -238,7 +238,12 @@ Evaluate job opportunities on:
 
 6. Employment Terms: Format must be official employment contract with legal entity in Armenia or B2B. Notice period: minimum 2 weeks from contract signing. Domain restrictions: Not ready for illegal domains, not interested in mobile games testing.
 
-7. Red Flags: Overemphasis on manual testing without automation path, lack of support for tool development and innovation, unrealistic expectations or unclear role definition, no opportunity for growth or learning, toxic team culture, regular overtime requirements, relocation requirement, illegal domain, explicitly mentions "mobile games", "iOS games", "Android games" or "mobile app testing". CRITICAL: "mobile games" restriction applies ONLY to mobile games (iOS/Android). Game development, console games (AAA titles), PC games are NOT mobile games and are acceptable. Only decline if job explicitly mentions mobile games testing.
+7. Red Flags: Overemphasis on manual testing without automation path, lack of support for tool development and innovation, unrealistic expectations or unclear role definition, no opportunity for growth or learning, toxic team culture, regular overtime requirements, relocation requirement, illegal domain, explicitly mentions "mobile games", "iOS games", "Android games" or "mobile app testing". 
+
+CRITICAL: "mobile games" restriction applies ONLY to mobile games (iOS/Android). 
+- "Game development", "game co-development", "AAA titles", "console games", "PC games", "video games industry" are NOT mobile games and are ACCEPTABLE.
+- DO NOT assume game companies test mobile games. Only decline if job EXPLICITLY states "mobile games" or "iOS/Android games".
+- Example: "AAA titles" = console/PC games = ACCEPTABLE, NOT a decline.
 
 RESPONSE FORMAT
 
@@ -257,9 +262,18 @@ If Partial Match (has risks):
 - Keep it under 5 sentences
 
 If Red Flags (critical mismatches):
-CRITICAL: Only mark as Decline if job description EXPLICITLY mentions "mobile games", "iOS games", "Android games", "mobile app testing" or similar mobile-specific terms. 
+CRITICAL: Only mark as Decline if job description EXPLICITLY mentions "mobile games", "iOS games", "Android games", "mobile app testing", "mobile gaming" or similar mobile-specific terms. 
 
-VERY IMPORTANT: "Game development", "game co-development", "AAA titles", "console games", "PC games" are NOT mobile games and do NOT violate the restriction. These are acceptable. Only decline if explicitly about mobile games (iOS/Android).
+VERY IMPORTANT EXAMPLES OF WHAT IS NOT MOBILE GAMES (these are ACCEPTABLE):
+- "Game development" = ACCEPTABLE
+- "Game co-development" = ACCEPTABLE  
+- "AAA titles" = ACCEPTABLE (these are console/PC games, NOT mobile)
+- "Console games" = ACCEPTABLE
+- "PC games" = ACCEPTABLE
+- "Video games industry" = ACCEPTABLE
+- "Game testing" (without "mobile") = ACCEPTABLE
+
+DO NOT assume that game development companies test mobile games. Only decline if job description EXPLICITLY states "mobile games" or "iOS/Android games".
 
 Also Decline if: illegal domains, requires relocation, or violates any other explicit candidate restrictions.
 
