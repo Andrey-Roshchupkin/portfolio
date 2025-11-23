@@ -14,6 +14,7 @@ const navItems: NavItem[] = [
   { path: '/speeches', label: 'Public Speeches', matchPattern: '/speech/' },
   { path: '/resume', label: 'Resume' },
   { path: '/about', label: 'About Me' },
+  { path: '/ask-gemini', label: 'Ask Gemini' },
 ];
 
 export function Navigation() {

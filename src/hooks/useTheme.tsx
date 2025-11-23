@@ -36,7 +36,7 @@ export function useTheme() {
     const handleChange = () => {
       const root = window.document.documentElement;
       const systemTheme = getSystemTheme();
-      
+
       if (systemTheme === 'dark') {
         root.classList.add('dark');
       } else {

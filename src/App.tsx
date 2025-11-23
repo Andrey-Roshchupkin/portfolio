@@ -8,6 +8,7 @@ import { SpeechList } from './components/SpeechList';
 import { SpeechView } from './components/SpeechView';
 import { About } from './components/About';
 import { Resume } from './components/Resume';
+import { AskGemini } from './components/AskGemini';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/speech/:slug" element={<SpeechView />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/ask-gemini" element={<AskGemini />} />
         </Routes>
       </main>
     </div>
