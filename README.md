@@ -9,6 +9,12 @@ Personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
 - 🎤 **Public Speeches** - List of conference talks and presentations
 - 👤 **About Me** - Personal introduction and background
 - 📄 **Resume** - Professional resume with PDF download and copy functionality
+- 🤖 **Ask Gemini** - Interactive AI chat powered by Chrome's WebAI API and Gemini Nano:
+  - Multimodal input (text and images)
+  - HR Mode for job vacancy evaluation against candidate profile
+  - Works locally without internet after model download
+  - Chat history persistence with localStorage
+  - Copy conversation to clipboard
 - 🌓 **Theme Toggle** - Dark/Light/System theme with localStorage persistence
 - 🎨 **GitHub-style Design** - Clean, minimalist design inspired by GitHub
 - 🔗 **SPA Routing** - Direct links to all content with React Router
@@ -31,6 +37,34 @@ npm run build
 # Preview production build
 npm run preview
 ```
+
+## Ask Gemini Setup
+
+The "Ask Gemini" feature uses Chrome's WebAI API with Gemini Nano model. To enable it:
+
+1. **Chrome Requirements:**
+   - Chrome 127+ (or Chromium-based browser)
+   - Windows 11+ or macOS 14.1+ or Linux (with Chrome 127+)
+
+2. **Enable Chrome Flags:**
+   - Open `chrome://flags/#prompt-api-for-gemini-nano-multimodal-input` in Chrome
+   - Set the flag to **Enabled**
+   - Restart Chrome
+
+3. **First Time Setup:**
+   - Navigate to the "Ask Gemini" page
+   - Click "Download" to download the Gemini Nano model (~2GB)
+   - Download time depends on your internet speed:
+     - 50 Mbit/s: ~40 minutes
+     - 100 Mbit/s: ~20 minutes
+     - 200 Mbit/s: ~10 minutes
+   - Once downloaded, the model works offline
+
+4. **HR Mode:**
+   - Enabled by default
+   - Evaluates job descriptions against candidate profile
+   - Provides match assessment with risks and recommendations
+   - Can be toggled on/off at any time
 
 ## Deployment to GitHub Pages
 
@@ -140,6 +174,7 @@ materials/
 - **Gray Matter** - Frontmatter parsing
 - **md-to-pdf** - PDF generation from Markdown (build-time)
 - **@tailwindcss/typography** - Beautiful typography for Markdown content
+- **Chrome WebAI API** - On-device AI inference with Gemini Nano
 
 ## License
 
