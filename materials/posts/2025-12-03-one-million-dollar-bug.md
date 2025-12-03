@@ -412,9 +412,3 @@ For those who don't want to wait or simply want to try the demo and explore ever
 
 **GitHub**: [https://github.com/Andrey-Roshchupkin/one-million-bug-go-backend-testing](https://github.com/Andrey-Roshchupkin/one-million-bug-go-backend-testing)
 
-The repository includes:
-- Two server versions (with and without the bug)
-- Complete test suite with 73 tests
-- Full documentation and setup instructions
-- Docker configurations for easy setup
-- All source code ready to explore and learn from
