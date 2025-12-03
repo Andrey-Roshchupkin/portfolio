@@ -166,7 +166,7 @@ Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-11-20-portfoli
 4. Strange Errors Server - Demonstration server showcasing HTTP fallacies and unconventional implementations. Used for testing and educational purposes.
 Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-09-11-strange-errors-server
 
-5. One Million Bug: Go Backend Testing - Comprehensive backend testing framework in Go. Built 73 tests (60 integration, 2 E2E, 9 property-based, 2 concurrent) covering all server routes. Implemented composition-based architecture, testcontainers for isolation, property-based testing with gopter, and 17 key principles of backend testing in banking systems. All tests complete in less than 55 seconds. Demonstrates reverse engineering approach and specialized backend testing patterns.
+5. One Million Bug: Go Backend Testing - Comprehensive backend testing framework in Go. Built extensive test suite covering all server routes with various test types including integration, E2E, property-based, and concurrent tests. Implemented composition-based architecture, testcontainers for isolation, property-based testing with gopter, and 17 key principles of backend testing in banking systems. Demonstrates reverse engineering approach and specialized backend testing patterns.
 Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-08-24-one-million-bug-go-backend-testing
 
 6. Div Epidemic Code Examples - Code examples addressing semantic HTML issues and the "div epidemic" problem.
@@ -183,7 +183,7 @@ Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-10-21-speech-reco
 3. From Div Hell to SEO Heaven - Article about semantic HTML and SEO best practices.
 Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-09-07-from-div-hell-to-seo-heaven
 
-4. One Million Dollar Bug: How I Caught It with Go Tests - Comprehensive article about backend testing in Go. Covers reverse engineering approach, building test frameworks with composition-based architecture, property-based testing, testcontainers for isolation, and 17 key principles of backend testing in banking systems. Demonstrates catching a million-dollar bug through systematic testing approach with 73 tests covering all server routes.
+4. One Million Dollar Bug: How I Caught It with Go Tests - Comprehensive article about backend testing in Go. Covers reverse engineering approach, building test frameworks with composition-based architecture, property-based testing, testcontainers for isolation, and 17 key principles of backend testing in banking systems. Demonstrates catching a million-dollar bug through systematic testing approach with comprehensive test coverage.
 Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-12-03-one-million-dollar-bug
 
 Public Speeches
@@ -208,21 +208,21 @@ Programming Languages Priority
 - Secondary: Go (proven expertise in backend testing, test framework development, and banking system testing)
 - Tertiary: Python (requires additional time for adaptation)
 
-Go Expertise: Candidate has demonstrated strong Go expertise through building a comprehensive backend testing framework. This includes: creating test frameworks with composition-based architecture (Go doesn't support inheritance), implementing 73 tests (integration, E2E, property-based, concurrent), working with testcontainers for database isolation, property-based testing with gopter, PostgreSQL integration, Swagger/OpenAPI testing, and applying 17 key principles of backend testing in banking systems. All tests execute in less than 55 seconds. This is not just basic Go knowledge - it's proven expertise in building production-ready test frameworks for financial systems.
+Go Expertise: Candidate has demonstrated strong Go expertise through building a comprehensive backend testing framework. This includes: creating test frameworks with composition-based architecture (Go doesn't support inheritance), implementing extensive test suites with various test types, working with testcontainers for database isolation, property-based testing with gopter, PostgreSQL integration, Swagger/OpenAPI testing, and applying 17 key principles of backend testing in banking systems. This is not just basic Go knowledge - it's proven expertise in building production-ready test frameworks for financial systems.
 
 For tertiary languages, additional time should be accounted for. The same applies to related knowledge areas.
 
 Go Backend Testing Expertise
-- Built comprehensive backend testing framework in Go with 73 tests (60 integration, 2 E2E, 9 property-based, 2 concurrent)
+- Built comprehensive backend testing framework in Go with extensive test coverage
 - Implemented composition-based architecture (Go doesn't support class inheritance)
 - Used testcontainers for complete test isolation with PostgreSQL databases
 - Applied property-based testing with gopter for combinatorial coverage
 - Worked with Swagger/OpenAPI documentation for API testing
 - Implemented 17 key principles of backend testing in banking systems
-- All tests complete in less than 55 seconds with full database isolation
+- Achieved high-performance test execution with full database isolation
 - Demonstrated reverse engineering approach to recreate and test banking systems
 - Expertise in financial system testing: money handling (integer-based), transaction atomicity, balance consistency, state verification
-- Experience with concurrent operation testing, pairwise testing, and database state verification
+- Experience with various test types including integration, E2E, property-based, concurrent, and pairwise testing
 
 Web3 Experience
 - Can set up test networks and test products
