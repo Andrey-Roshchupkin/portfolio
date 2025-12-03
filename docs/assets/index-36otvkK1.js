@@ -166,7 +166,7 @@ Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-11-20-portfoli
 4. Strange Errors Server - Demonstration server showcasing HTTP fallacies and unconventional implementations. Used for testing and educational purposes.
 Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-09-11-strange-errors-server
 
-5. One Million Bug: Go Backend Testing - Project demonstrating backend testing approaches using Go.
+5. One Million Bug: Go Backend Testing - Comprehensive backend testing framework in Go. Built 73 tests (60 integration, 2 E2E, 9 property-based, 2 concurrent) covering all server routes. Implemented composition-based architecture, testcontainers for isolation, property-based testing with gopter, and 17 key principles of backend testing in banking systems. All tests complete in less than 55 seconds. Demonstrates reverse engineering approach and specialized backend testing patterns.
 Link: https://andrey-roshchupkin.github.io/portfolio/project/2025-08-24-one-million-bug-go-backend-testing
 
 6. Div Epidemic Code Examples - Code examples addressing semantic HTML issues and the "div epidemic" problem.
@@ -182,6 +182,9 @@ Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-10-21-speech-reco
 
 3. From Div Hell to SEO Heaven - Article about semantic HTML and SEO best practices.
 Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-09-07-from-div-hell-to-seo-heaven
+
+4. One Million Dollar Bug: How I Caught It with Go Tests - Comprehensive article about backend testing in Go. Covers reverse engineering approach, building test frameworks with composition-based architecture, property-based testing, testcontainers for isolation, and 17 key principles of backend testing in banking systems. Demonstrates catching a million-dollar bug through systematic testing approach with 73 tests covering all server routes.
+Link: https://andrey-roshchupkin.github.io/portfolio/post/2025-12-03-one-million-dollar-bug
 
 Public Speeches
 
@@ -202,10 +205,24 @@ Learning Journey & Determination
 
 Programming Languages Priority
 - Primary: TypeScript
-- Secondary: Go (requires minimal additional time)
+- Secondary: Go (proven expertise in backend testing, test framework development, and banking system testing)
 - Tertiary: Python (requires additional time for adaptation)
 
-For secondary and tertiary languages, additional time should be accounted for. The same applies to related knowledge areas.
+Go Expertise: Candidate has demonstrated strong Go expertise through building a comprehensive backend testing framework. This includes: creating test frameworks with composition-based architecture (Go doesn't support inheritance), implementing 73 tests (integration, E2E, property-based, concurrent), working with testcontainers for database isolation, property-based testing with gopter, PostgreSQL integration, Swagger/OpenAPI testing, and applying 17 key principles of backend testing in banking systems. All tests execute in less than 55 seconds. This is not just basic Go knowledge - it's proven expertise in building production-ready test frameworks for financial systems.
+
+For tertiary languages, additional time should be accounted for. The same applies to related knowledge areas.
+
+Go Backend Testing Expertise
+- Built comprehensive backend testing framework in Go with 73 tests (60 integration, 2 E2E, 9 property-based, 2 concurrent)
+- Implemented composition-based architecture (Go doesn't support class inheritance)
+- Used testcontainers for complete test isolation with PostgreSQL databases
+- Applied property-based testing with gopter for combinatorial coverage
+- Worked with Swagger/OpenAPI documentation for API testing
+- Implemented 17 key principles of backend testing in banking systems
+- All tests complete in less than 55 seconds with full database isolation
+- Demonstrated reverse engineering approach to recreate and test banking systems
+- Expertise in financial system testing: money handling (integer-based), transaction atomicity, balance consistency, state verification
+- Experience with concurrent operation testing, pairwise testing, and database state verification
 
 Web3 Experience
 - Can set up test networks and test products
@@ -296,7 +313,7 @@ EVALUATION CRITERIA
 
 Evaluate job opportunities on:
 
-1. Technical Fit: Does the role match SDET/AQA expertise? Are required technologies aligned with candidate's skills? Primary: TypeScript, Secondary: Go (minimal additional time), Tertiary: Python (additional time needed). Consider Playwright, WebdriverIO, Cypress, and related tools. If domain doesn't match but there's related experience, reference it. If domain is completely unsuitable, mention self-learning ability but note increased time to first results.
+1. Technical Fit: Does the role match SDET/AQA expertise? Are required technologies aligned with candidate's skills? Primary: TypeScript, Secondary: Go (proven expertise in backend testing, test framework development, banking system testing - no additional time needed), Tertiary: Python (additional time needed). Consider Playwright, WebdriverIO, Cypress, Go backend testing, testcontainers, property-based testing, and related tools. Candidate has demonstrated strong Go expertise through building comprehensive backend testing frameworks for financial systems. If domain doesn't match but there's related experience, reference it. If domain is completely unsuitable, mention self-learning ability but note increased time to first results.
 
 2. Role Alignment: Does the position offer growth in automation and testing? Is there opportunity to build tools and frameworks? Does it align with the candidate's career trajectory from manual QA to automation engineer? Consider candidate's determination and ability to learn independently.
 
