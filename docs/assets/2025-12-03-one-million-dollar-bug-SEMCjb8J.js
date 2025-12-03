@@ -54,7 +54,7 @@ Both servers include several **key characteristics typical of real banking syste
 
 I had **two servers with Swagger documentation and PostgreSQL databases** connected, and I started developing tests in Go. A separate article will cover the test framework in detail, but I want to mention one key architectural difference here.
 
-In **E2E testing from the end-user perspective**, I used **TypeScript to describe business logic**. However, for **backend testing in Go**, I needed a **composition-based approach** because backend operations are repetitive but numerous. This wasn't difficult—it required understanding and accepting a different approach.
+In **E2E testing from the end-user perspective**, I used **TypeScript with class inheritance** to describe business logic—creating base test classes and extending them for specific scenarios. However, for **backend testing in Go**, I needed a **composition-based approach** because Go doesn't support class inheritance. Instead, Go uses struct composition and helper functions to build reusable test components. This wasn't difficult—it required understanding and accepting a different architectural paradigm.
 
 As a result, I built a solid framework with **test coverage for all routes** and several **user scenarios**.
 
@@ -418,5 +418,4 @@ The repository includes:
 - Full documentation and setup instructions
 - Docker configurations for easy setup
 - All source code ready to explore and learn from
-
 `;export{e as default};
