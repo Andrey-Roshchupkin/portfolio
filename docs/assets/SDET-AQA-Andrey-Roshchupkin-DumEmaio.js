@@ -16,6 +16,8 @@ const e=`# Andrey Roshchupkin
 
 Organically grew from manual QA to automation engineer, building high-performance test architectures with exceptional ROI—cutting execution time and replacing the repetitive work of QA engineers at a fraction of the cost. I mentor teams, write technical articles, continuously learn new technologies, and integrate AI into testing workflows to solve real problems. My automation frameworks act as virtual QA engineers, complementing teams while delivering measurable business impact.
 
+Beyond my professional work, I continuously expand my expertise through personal projects that have allowed me to deepen my knowledge in AI integration, the Go programming language, and fintech backend testing through developing a comprehensive Go-based testing framework.
+
 I believe that if it's difficult, it's possible — in work, in training, and in life.
 I choose paths that demand effort because that's where real growth hides.
 Challenges don't intimidate me; they motivate me to outperform who I was yesterday — so, do you have a new challenge for me?
