@@ -412,3 +412,15 @@ For those who don't want to wait or simply want to try the demo and explore ever
 
 **GitHub**: [https://github.com/Andrey-Roshchupkin/one-million-bug-go-backend-testing](https://github.com/Andrey-Roshchupkin/one-million-bug-go-backend-testing)
 
+---
+
+## What's Your Experience?
+
+I've shared **17 principles** that I've found essential for backend testing in banking systems. But I'm curious—**have I missed any critical principles** that you've discovered in your testing experience?
+
+Whether you're testing financial systems, e-commerce platforms, or any other backend services where data integrity is crucial, I'd love to hear:
+- What principles or practices have you found most valuable?
+- Have you encountered similar bugs that could have been caught with these approaches?
+- What challenges have you faced when testing backend systems?
+
+**Share your thoughts and experiences in the comments**—let's learn from each other!
